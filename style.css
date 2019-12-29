@@ -1,0 +1,599 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------- navigation bar -----------*/
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover{
+    color: #007bff!important;
+}
+
+.navbar{
+    background: yellowgreen;
+}
+
+.navbar-toggler{
+    border: none!important;
+}
+
+.nav-link{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: .10px;
+    word-spacing: .5px;
+    text-transform: uppercase;
+}
+
+/*---------  end of navigation bar -----------*/
+
+/*--------- slider section -----------*/
+
+#slider{
+    width: 100%;
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+
+.carousel-caption h2{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600 bold;
+    font-size: 4em;
+    color: #fff;
+    width: 80%;
+}
+h2 span{
+    color: #0f0;
+    display: none;
+    text-transform: uppercase;
+}
+
+.carousel-caption h5{
+    color: #0f0;
+    font-size: 4em;
+    font-weight: 600 bold;
+    text-transform: uppercase;
+}
+
+/*--------- end of slider section -----------*/
+
+/*--------- about section -----------*/
+
+#about{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+#about .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+} 
+
+.about-content{
+    padding-top: 50px;
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600 bold;
+}
+
+.progress-bar{
+    border-radius: 16px;
+}
+
+/*--------- end of about section -----------*/
+
+/*--------- services section -----------*/
+
+#services{
+    background-image: linear-gradient(rgba(15, 78, 36, 0.8),rgba(33, 163, 76, 1)),url(images/img17.jfif);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+#services h1 
+{
+    text-align: center;
+    justify-content: center;
+    color: #efefef!important;
+    padding-bottom: 10px;
+}
+
+
+#services h1::after 
+{
+   content: '';
+   background-color: #efefef;
+   display: block;
+   height: 3px;
+   width: 570px;
+   margin: 20px auto 5px;
+}
+
+.services{
+    margin-top: 40px;
+}
+
+.icon{
+    font-size: 40px;
+    color: black;
+    margin: 20px auto ;
+    padding: 20px;
+    padding-bottom: 50px;
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#services p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: black;
+}
+
+.services .col-md-3:hover{
+    background: #007bff;
+    cursor: pointer;
+    transition: .7s;
+}
+
+/*--------- end of services section -----------*/
+
+/*--------- team section -----------*/
+
+#team{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+#team h1{
+    text-align: center;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#team h1::after{
+    content: '';
+   background-color: black;
+   display: block;
+   height: 3px;
+   width: 270px;
+   margin: 20px auto 5px;
+}
+
+.profile-pic{
+    margin-top: 25px;
+}
+
+.profile-pic .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile-pic .img-box img{
+    filter: grayscale(1);
+}
+
+.profile-pic .img-box img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.profile-pic h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff!important;
+}
+
+.profile-pic h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#team .fa {
+    height: 25px;
+    width: 25px;
+    color: #007bff;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.img-box ul{
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li{
+    padding: 5px;
+    display: inline-block;
+}
+
+.img-box:hover ul{
+    opacity: 1;
+}
+
+.img-box ul, .img-box ul li{
+    transition: 0.5s;
+}
+
+/*--------- end of team section -----------*/
+
+/*--------- promo section -----------*/
+
+#promo {
+    background-image: linear-gradient(rgba(250, 143, 3, 0.979),rgba(250, 143, 3, 0)), url(./images/img18.jfif);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-size: 40px;
+}
+
+/*--------- end of promo section -----------*/
+
+/*-------------- price plans section -----------------*/
+
+#price{
+    padding: 40px 0;
+    background: #efefef;
+}
+
+#price h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#price h1::after{
+    content: '';
+   background-color: black;
+   display: block;
+   height: 3px;
+   width: 370px;
+   margin: 20px auto 5px;
+}
+
+.single-price{
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.single-price:hover{
+    box-shadow: 10px 2px 20px black;
+}
+
+.price-head{
+    background-color: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.price-head:hover{
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+
+.price-head h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.price-head h3{
+    color: #ccc;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#price span {
+    font-size: 15px;
+}
+
+.price-content{
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.price-content:hover{
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+
+.price-content ul li {
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+ul li:last-child{
+    border: none;
+}
+
+.fa-check-circle{
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.fa-times-circle{
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.price-button{
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.buy-btn{
+    background-color: #2196f3;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: 18px;
+    padding: 15px 50px;
+    transition: .5s;
+}
+
+.buy-btn:hover{
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+
+a{
+    text-decoration: none!important;
+    color: #fff!important;
+}
+
+/*-------------- end of price plans section -----------------*/
+
+/*-------------- testimonials section -----------------*/
+
+#testimonials{
+    padding: 40px 0;
+    background: #fff;
+}
+
+#testimonials h1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#testimonials h1::after{
+    content: '';
+   background-color: black;
+   display: block;
+   height: 3px;
+   width: 370px;
+   margin: 20px auto 5px;
+}
+
+#testimonials .row {
+    margin-top: 30px;
+}
+
+.col-md-4{
+    margin: 40px auto;
+}
+
+.profile{
+    padding: 70px 10px 10px;
+    background-color: #007bff;
+}
+
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile img {
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+}
+
+.profile h3{
+    font-size: 30px;
+    margin-top: 15px;
+    color: yellow;
+}
+
+.profile:hover{
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+
+.profile:hover h3{
+    border-color: 1px solid #fff;
+    background-color: #007bff;
+}
+
+#testimonials span {
+    font-size: 15px;
+}
+
+/*blockquote::before{
+    content: '\93';
+    font-size: 50px;
+    color: black;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+blockquote::after{
+    content: '\94';
+    font-size: 50px;
+    color: black;
+    position: relative;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}*/
+
+.profile:hover{
+    box-shadow:  10px 2px 20px black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*-------------- end of testimonials section -----------------*/
+
+/*-------------- contact section -----------------*/
+
+#contact{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.8)),url(./images/img17.jfif);
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #777;
+}
+
+#contact h1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    color: #007bff;
+}
+
+#contact h1::after{
+    content: '';
+   background-color: yellow;
+   display: block;
+   height: 3px;
+   width: 370px;
+   margin: 20px auto 5px;
+}
+
+#contact h1:hover{
+    color: yellow;
+}
+
+.contact-form{
+    padding: 15px;
+}
+
+.form-control{
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+::placeholder{
+    color: #3f51b5 !important;
+}
+
+.follow{
+    background: #fff;
+    margin: 15px;
+    padding: 10px;
+}
+
+.contact-info .fa{
+    color: #007bff;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.contact-info .fa:hover{
+    color: yellow;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/*-------------- end of contact section -----------------*/
+
+/*-------------- footer section -----------------*/
+
+#footer{
+    background: black;
+    color: #fff;
+    padding: 12px;
+}
+
+#footer p{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#footer p:hover{
+    color: red;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.fa-heart-o{
+    color: red;
+}
+
+/*-------------- end of footer section -----------------*/
